@@ -1,0 +1,83 @@
+/* Estilos globales */
+* {
+  background-color: #000; /* Fondo negro para todos los elementos */
+  color: #fff; /* Texto en blanco */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilos para el body */
+body {
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+  padding-top: 40px; /* Añade un padding superior de 40px */
+  cursor: none; /* Oculta el cursor predeterminado */
+}
+
+/* Estilos para el punto del cursor personalizado */
+.cursor-dot {
+  width: 5px; /* Ancho del punto del cursor */
+  height: 5px; /* Alto del punto del cursor */
+  background-color: #fff; /* Color blanco para el punto */
+}
+
+/* Estilos para el contorno del cursor personalizado */
+.cursor-outline {
+  width: 30px; /* Ancho del contorno del cursor */
+  height: 30px; /* Alto del contorno del cursor */
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid #4296ce; /* Borde azul claro */
+}
+
+/* Estilos compartidos para el punto y el contorno del cursor */
+.cursor-dot,
+.cursor-outline {
+  position: fixed; /* Posición fija respecto a la ventana */
+  top: 0; /* Posición vertical inicial en la parte superior */
+  left: 0; /* Posición horizontal inicial en la parte izquierda */
+  transform: translate(-50%, -50%); /* Centra los elementos */
+  border-radius: 50%; /* Hace que los elementos sean circulares */
+  z-index: 1; /* Asegura que se muestren encima de otros elementos */
+  pointer-events: none; /* Ignora interacciones del puntero */
+}
+
+/* Estilos para el contenedor "world" */
+.world {
+  margin: auto; /* Centra el contenedor horizontalmente */
+  width: 300px; /* Ancho del contenedor */
+  height: 300px; /* Alto del contenedor */
+  border-radius: 50%; /* Hace que el contenedor sea circular */
+  background: url(img/earth.png); /* Fondo con una imagen de la Tierra */
+  background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
+  box-shadow: inset 0 0 20px #000, inset -40px -10px 20px rgba(3, 32, 56, 0.7); /* Sombra interna para un efecto de profundidad */
+  animation: earth 5s linear infinite; /* Aplicación de animación continua */
+}
+
+/* Estilos para el footer */
+footer {
+  position: fixed; /* Posición fija en la parte inferior */
+  bottom: 0; /* Alínea en la parte inferior de la ventana */
+  width: 100%; /* Ancho completo */
+  height: 20px; /* Altura del footer */
+  display: flex; /* Usar flexbox para el alineamiento */
+  align-items: center; /* Centra verticalmente los elementos dentro del footer */
+  justify-content: center; /* Centra horizontalmente los elementos dentro del footer */
+}
+
+/* Estilos para el encabezado dentro del footer */
+footer h1 {
+  background-color: transparent; /* Fondo transparente */
+  font-size: medium; /* Tamaño de fuente medio */
+  padding: 10px; /* Espaciado interno de 10px */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+}
+
+/* Definición de la animación "earth" */
+@keyframes earth {
+  0% {
+    background-position-x: 0; /* Posición inicial del fondo */
+  }
+  100% {
+    background-position-x: -600px; /* Posición final del fondo, crea un efecto de movimiento */
+  }
+}
