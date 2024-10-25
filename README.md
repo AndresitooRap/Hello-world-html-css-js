@@ -7,7 +7,7 @@
 
 ## HELLO WORLD USING HTML, CSS & JS
 
-Este es mi primer proyecto que invlocura el uso de Html5, Css3 y JS, el proyecto se basa en mostrar un "Hello world" en la pantalla
+Este es mi primer proyecto que invlocura el uso de Html5, Css3 y JS, el proyecto se basa en mostrar un "Hello world" en la pantalla https://andresitoorap.github.io/hello-world-html-css-js/
 
 </div>
 
